@@ -6,7 +6,3 @@ variable "name" {
   type = string
   description = "The name of the user"
 }
-variable "value" {
-  type = string
-  description = "range of cidr for waf"
-}
