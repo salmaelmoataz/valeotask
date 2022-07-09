@@ -32,8 +32,6 @@ i used the official documention of terraform to help me creating the user (https
 2. i used the resourse "aws_iam_access_key" and provide it with the user name to give it access key and activate it
 3. i used the resource "aws_iam_user_policy" to give the user policy, this policy will allow the user to list the content of the bucket and upload files on it only if the file name is "index.html"
 
-for high availability we create VPC in two AZ so we will have 4 subnet (2public-2private)
-
 ## 2- Create WAF and its requirments(ipset and role)
 i used the official documention of terraform to help me creating the WAF (https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/waf_web_acl)
 1. i used resource "aws_waf_ipset" to identify the range of IPs that will allowed to access the website
